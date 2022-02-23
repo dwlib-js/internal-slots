@@ -1,0 +1,32 @@
+{
+  "name": "@dwlib/internal-slots",
+  "version": "1.0.0",
+  "description": "Internal Slots",
+  "main": "lib/index.js",
+  "exports": {
+    "require": "./lib/index.js",
+    "import": "./lib/index.mjs"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwlib-js/internal-slots.git"
+  },
+  "keywords": [
+    "internal",
+    "slots"
+  ],
+  "author": "Pavel Wolf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dwlib-js/internal-slots/issues"
+  },
+  "homepage": "https://github.com/dwlib-js/internal-slots#readme",
+  "dependencies": {
+    "@dwlib/abstract": "^1.0.0",
+    "@dwlib/primordials": "^1.0.1"
+  }
+}
