@@ -1,11 +1,42 @@
 {
   "name": "@dwlib/internal-slots",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Internal Slots",
   "main": "lib/index.js",
+  "imports": {
+    "#intrinsics/*": "@dwlib/intrinsics/abstract/*",
+    "#primordials/*": "@dwlib/primordials/*",
+    "#abstract/*": "@dwlib/abstract/*",
+    "#internal": {
+      "require": "./lib/internal/index.js",
+      "import": "./lib/internal/index.mjs"
+    },
+    "#internal/*": {
+      "require": "./lib/internal/*.js",
+      "import": "./lib/internal/*.mjs"
+    },
+    "#abstract-functions/*": {
+      "require": "./lib/abstract/*.js",
+      "import": "./lib/abstract/*.mjs"
+    }
+  },
   "exports": {
-    "require": "./lib/index.js",
-    "import": "./lib/index.mjs"
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./lib/index.mjs"
+    },
+    "./*": {
+      "require": "./lib/*.js",
+      "import": "./lib/*.mjs"
+    },
+    "./abstract": {
+      "require": "./lib/abstract/index.js",
+      "import": "./lib/abstract/index.mjs"
+    },
+    "./abstract/*": {
+      "require": "./lib/abstract/*.js",
+      "import": "./lib/abstract/*.mjs"
+    }
   },
   "files": [
     "lib"
@@ -26,7 +57,8 @@
   },
   "homepage": "https://github.com/dwlib-js/internal-slots#readme",
   "dependencies": {
-    "@dwlib/abstract": "^1.0.0",
-    "@dwlib/primordials": "^1.0.1"
+    "@dwlib/abstract": "^1.0.7",
+    "@dwlib/intrinsics": "^1.0.3",
+    "@dwlib/primordials": "^1.0.3"
   }
 }
