@@ -1,6 +1,6 @@
 {
   "name": "@dwlib/internal-slots",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Internal Slots",
   "main": "lib/index.js",
   "imports": {
@@ -57,8 +57,8 @@
   },
   "homepage": "https://github.com/dwlib-js/internal-slots#readme",
   "dependencies": {
-    "@dwlib/abstract": "^1.0.7",
-    "@dwlib/intrinsics": "^1.0.3",
-    "@dwlib/primordials": "^1.0.3"
+    "@dwlib/abstract": "^1.0.8",
+    "@dwlib/intrinsics": "^1.0.4",
+    "@dwlib/primordials": "^1.0.4"
   }
 }
